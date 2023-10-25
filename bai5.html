@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function bai5() {
+            
+        
+      var Array1 = prompt("Nhập xâu");
+var arrCount = [];
+for(let i = 0; i < Array1.length; i++) {
+    if(arrCount[Array1[i]]) {
+        arrCount[Array1[i]]++;
+    } else {
+        arrCount[Array1[i]] = 1;
+    }
+}
+   for (let key in arrCount){
+    document.write( arrCount[key])//không đưa đc ký tự
+   }
+}
+bai5();
+    </script>
+</body>
+
+</html>
